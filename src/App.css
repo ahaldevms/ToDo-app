@@ -1,38 +1,236 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-image: url("https://styledme.com/wp-content/uploads/2021/01/plain-wall-simple-minimalist-virtual-meeting-zoom-background-with-plant.jpg");
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.add_todo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.mainHeading h1,h4 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app h1 {
+  color:  rgb(9, 61, 26);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app h4 {
+  color:  rgb(64, 92, 73);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  margin-top: 0.8em;
+  width: 30em;
+  height: 2.3em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input input {
+  width: 100%;
+  height: 1.6em;
+  border-color: transparent;
+  outline-color: transparent;
 }
+
+.input i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
+}
+
+.cross {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: rgb(230, 97, 97);
+  margin-right: 5px;
+}
+.todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todos .todo {
+  margin-top: 0.8em;
+  width: 35rem;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todos .todo .left p {
+  margin-left: 2rem;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+
+
+.Finished .todo {
+  margin-top: 0.8em;
+  width: 35rem;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+.Finished {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Finished .todo p{
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(57, 211, 139);
+
+}
+
+
+
+
+.Dos {
+
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) rgba(255,255,255,0));
+  backdrop-filter: blur(10px) ;
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+  width: 33%;
+  height: 30rem;
+  border-radius: 15px;
+  position: fixed;
+  bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.Discard {
+
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) rgba(255,255,255,0));
+  backdrop-filter: blur(10px) ;
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+
+  width: 33%;
+  height: 30rem;
+  border-radius: 15px;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.to-dos {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) rgba(255,255,255,0));
+  backdrop-filter: blur(10px) ;
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+  width: 31%;
+  height: 30rem;
+  border-radius: 15px;
+  position:fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dlete .todo {
+  margin-top: 0.8em;
+  width: 35rem;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+.dlete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dlete .todo p{
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(185, 80, 80);
+
+}
+
+
+
+
+.to-dos h2{
+  text-align: center;
+  color: rgb(14, 104, 54);
+  margin-top: .7rem;
+  padding-bottom: 1.5rem;
+  text-shadow: 3px 3px 8px rgba(121, 218, 179, 3);
+  
+}
+
+.Discard h2{
+  text-align: center;
+  color: rgb(14, 104, 54);
+  margin-top: .7rem;
+  padding-bottom: 1.5rem;
+}
+
+.Dos h2{
+
+  text-align: center;
+  color: rgb(14, 104, 54);
+  margin-top: .7rem;
+  padding-bottom: 1.5rem;
+
+}
+

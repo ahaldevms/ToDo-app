@@ -77,7 +77,7 @@ body {
 }
 .todos .todo {
   margin-top: 0.8em;
-  width: 35rem;
+  width: 85%;
   height: 2em;
   background-color: white;
   display: flex;
@@ -104,7 +104,7 @@ body {
 
 .Finished .todo {
   margin-top: 0.8em;
-  width: 35rem;
+  width: 85%;
   height: 2em;
   background-color: white;
   display: flex;
@@ -117,14 +117,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 
 .Finished .todo p{
   margin-left: 3px;
   font-size: medium;
   font-weight: 700;
   font-style: normal;
-  color: rgb(57, 211, 139);
+  color: rgb(32, 182, 54);
 
 }
 
@@ -182,7 +184,7 @@ body {
 
 .dlete .todo {
   margin-top: 0.8em;
-  width: 35rem;
+  width: 85%;
   height: 2em;
   background-color: white;
   display: flex;
@@ -195,6 +197,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .dlete .todo p{
@@ -202,7 +205,7 @@ body {
   font-size: medium;
   font-weight: 700;
   font-style: normal;
-  color: rgb(185, 80, 80);
+  color: rgb(247, 67, 67);
 
 }
 
@@ -214,7 +217,7 @@ body {
   color: rgb(14, 104, 54);
   margin-top: .7rem;
   padding-bottom: 1.5rem;
-  text-shadow: 3px 3px 8px rgba(121, 218, 179, 3);
+  text-shadow: 3px 3px 8px rgb(240, 255, 253);
   
 }
 
@@ -234,3 +237,14 @@ body {
 
 }
 
+.to-dos.todos.todo.left{
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.to-dos.todos{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.to-dos.todos.todo.left i{
+  color: rgb(34, 138, 53);
+}
